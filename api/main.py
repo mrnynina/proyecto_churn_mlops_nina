@@ -66,6 +66,8 @@ def inicio() -> dict[str, str]:
         "mensaje": "Servicio ML-Ops activo",
         "estado": "ok",
         "autor": "MARÍA DEL ROSARIO NINA YUCRA",
+        "modelo": "modelo_churn_v1",
+        "fecha_entrenamiento": "13-06-2026"
     }
 
 @app.get("/health")
