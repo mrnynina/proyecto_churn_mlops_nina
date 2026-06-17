@@ -82,3 +82,66 @@
 2026-06-16 22:09:30,988 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
 2026-06-16 22:17:59,864 | INFO | 3 changes detected
 2026-06-16 22:18:00,223 | INFO | 5 changes detected
+2026-06-16 22:23:04,400 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 22:23:04,400 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
+2026-06-16 22:23:09,328 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 22:23:09,328 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
+2026-06-16 22:23:18,992 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=7.071
+2026-06-16 22:23:19,018 | INFO | Solicitud | metodo=GET | ruta=/health | estado=200 | latencia_ms=2.170
+2026-06-16 22:23:19,030 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=2.119
+2026-06-16 22:23:19,063 | INFO | Predicción | resultado=bajo_riesgo | probabilidad=0.0725 | nivel_riesgo=Bajo | alertas=0
+2026-06-16 22:23:19,064 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=5.946
+2026-06-16 22:23:19,074 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.7305 | nivel_riesgo=Alto | alertas=0
+2026-06-16 22:23:19,080 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.408
+2026-06-16 22:23:19,094 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.9978 | nivel_riesgo=Muy Alto | alertas=0
+2026-06-16 22:23:19,097 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.529
+2026-06-16 22:23:19,106 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.7216 | nivel_riesgo=Alto | alertas=0
+2026-06-16 22:23:19,113 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=4.240
+2026-06-16 22:23:19,130 | WARNING | Valores fuera de rango histórico: ['cargo_mensual=200.0 fuera del rango histórico [20.0, 150.0]']
+2026-06-16 22:23:19,130 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.9452 | nivel_riesgo=Muy Alto | alertas=1
+2026-06-16 22:23:19,130 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=4.504
+2026-06-16 22:23:19,147 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 22:23:19,147 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 22:23:19,149 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=5.007
+2026-06-16 22:23:19,159 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'greater_than_equal', 'loc': ('body', 'cargo_mensual'), 'msg': 'Input should be greater than or equal to 0', 'input': -50.0, 'ctx': {'ge': 0.0}}]
+2026-06-16 22:23:19,164 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=2.512
+2026-06-16 22:23:19,176 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'missing', 'loc': ('body', 'reclamos'), 'msg': 'Field required', 'input': {'antiguedad': 36, 'cargo_mensual': 60.5}}]
+2026-06-16 22:23:19,176 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=1.649
+2026-06-16 22:23:19,190 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=2.642
+2026-06-16 22:35:03,120 | INFO | 7 changes detected
+2026-06-16 22:35:04,396 | INFO | 5 changes detected
+2026-06-16 22:35:04,834 | INFO | 5 changes detected
+2026-06-16 22:37:46,008 | INFO | 35 changes detected
+2026-06-16 22:37:46,370 | INFO | 3 changes detected
+2026-06-16 22:37:46,778 | INFO | 3 changes detected
+2026-06-16 22:37:47,396 | INFO | 2 changes detected
+2026-06-16 22:37:47,754 | INFO | 5 changes detected
+2026-06-16 22:37:48,120 | INFO | 3 changes detected
+2026-06-16 22:37:52,839 | INFO | 7 changes detected
+2026-06-16 22:37:54,107 | INFO | 5 changes detected
+2026-06-16 22:37:54,461 | INFO | 3 changes detected
+2026-06-16 22:37:54,820 | INFO | 2 changes detected
+2026-06-16 22:39:35,227 | INFO | 45 changes detected
+2026-06-16 22:39:35,589 | INFO | 3 changes detected
+2026-06-16 22:39:35,996 | INFO | 3 changes detected
+2026-06-16 22:39:36,559 | INFO | 2 changes detected
+2026-06-16 22:39:36,920 | INFO | 3 changes detected
+2026-06-16 22:39:51,212 | INFO | 11 changes detected
+2026-06-16 22:39:51,573 | INFO | 2 changes detected
+2026-06-16 22:39:52,534 | INFO | 3 changes detected
+2026-06-16 22:39:52,886 | INFO | 2 changes detected
+2026-06-16 22:49:15,599 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=2.212
+2026-06-16 22:49:15,803 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=42.139
+2026-06-16 22:50:00,960 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | nivel_riesgo=Muy Alto | alertas=0
+2026-06-16 22:50:00,963 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=6.295
+2026-06-16 22:50:05,341 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | nivel_riesgo=Muy Alto | alertas=0
+2026-06-16 22:50:05,343 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=6.328
+2026-06-16 22:51:44,571 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'greater_than_equal', 'loc': ('body', 'cargo_mensual'), 'msg': 'Input should be greater than or equal to 0', 'input': -50, 'ctx': {'ge': 0.0}}]
+2026-06-16 22:51:44,573 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=8.318
+2026-06-16 22:52:27,182 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=1.313
+2026-06-16 22:52:27,326 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=1.022
+2026-06-16 22:53:00,157 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | nivel_riesgo=Muy Alto | alertas=0
+2026-06-16 22:53:00,159 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=5.099
+2026-06-16 22:59:06,134 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'less_than_equal', 'loc': ('body', 'antiguedad'), 'msg': 'Input should be less than or equal to 240', 'input': 280, 'ctx': {'le': 240}}]
+2026-06-16 22:59:06,138 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=4.494
+2026-06-16 23:15:56,419 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=3.744
