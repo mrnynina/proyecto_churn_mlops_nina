@@ -1,0 +1,22 @@
+# Entorno virtual local
+.venv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Caché de notebooks
+.ipynb_checkpoints/
+
+# Git
+.git/
+.gitignore
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

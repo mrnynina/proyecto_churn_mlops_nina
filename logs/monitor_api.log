@@ -1,0 +1,84 @@
+2026-06-16 20:31:00,861 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 20:31:00,866 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
+2026-06-16 20:31:03,090 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 20:31:03,090 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
+2026-06-16 20:32:07,355 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=4.498
+2026-06-16 20:32:08,576 | INFO | Solicitud | metodo=GET | ruta=/favicon.ico | estado=404 | latencia_ms=0.439
+2026-06-16 20:32:39,498 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=2.123
+2026-06-16 20:32:47,941 | INFO | Solicitud | metodo=GET | ruta=/health | estado=200 | latencia_ms=1.972
+2026-06-16 20:32:57,335 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=1.334
+2026-06-16 20:33:04,567 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.346
+2026-06-16 20:33:04,691 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=18.082
+2026-06-16 20:33:30,716 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=1.129
+2026-06-16 20:33:35,516 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=1.822
+2026-06-16 20:57:00,756 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8545 | nivel_riesgo=Muy Alto | alertas=0
+2026-06-16 20:57:00,757 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=5.712
+2026-06-16 20:58:11,213 | INFO | Predicción | resultado=alto_riesgo | probabilidad=0.8700 | nivel_riesgo=Muy Alto | alertas=0
+2026-06-16 20:58:11,214 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.222
+2026-06-16 20:59:06,667 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.296
+2026-06-16 20:59:06,764 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.302
+2026-06-16 20:59:27,258 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 20:59:27,259 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 20:59:27,260 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.659
+2026-06-16 20:59:42,771 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 20:59:42,771 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 20:59:42,773 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.264
+2026-06-16 20:59:55,319 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 20:59:55,319 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 20:59:55,320 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.076
+2026-06-16 21:00:57,396 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 21:00:57,396 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 21:00:57,398 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.174
+2026-06-16 21:07:31,823 | INFO | 2 changes detected
+2026-06-16 21:07:32,181 | INFO | 5 changes detected
+2026-06-16 21:07:52,585 | INFO | 7 changes detected
+2026-06-16 21:26:19,991 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 21:26:19,991 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 21:26:19,992 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.799
+2026-06-16 21:27:02,213 | WARNING | Valores fuera de rango histórico: ['antiguedad=180 fuera del rango histórico [1, 72]', 'cargo_mensual=600.0 fuera del rango histórico [20.0, 150.0]', 'reclamos=35 fuera del rango histórico [0, 7]']
+2026-06-16 21:27:02,213 | INFO | Predicción | resultado=alto_riesgo | probabilidad=1.0000 | nivel_riesgo=Muy Alto | alertas=3
+2026-06-16 21:27:02,215 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=200 | latencia_ms=3.260
+2026-06-16 21:34:47,428 | INFO | Solicitud | metodo=GET | ruta=/ | estado=200 | latencia_ms=1.637
+2026-06-16 21:34:55,951 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.375
+2026-06-16 21:34:56,030 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.434
+2026-06-16 21:35:34,376 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'missing', 'loc': ('body', 'reclamos'), 'msg': 'Field required', 'input': {'antiguedad': 36, 'cargo_mensual': 60.5}}]
+2026-06-16 21:35:34,377 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=2.010
+2026-06-16 21:37:15,976 | INFO | Solicitud | metodo=GET | ruta=/docs | estado=200 | latencia_ms=0.340
+2026-06-16 21:37:16,053 | INFO | Solicitud | metodo=GET | ruta=/openapi.json | estado=200 | latencia_ms=0.393
+2026-06-16 21:37:37,436 | WARNING | Error de validación | ruta=/predict | detalle=[{'type': 'greater_than_equal', 'loc': ('body', 'cargo_mensual'), 'msg': 'Input should be greater than or equal to 0', 'input': -50, 'ctx': {'ge': 0.0}}]
+2026-06-16 21:37:37,436 | INFO | Solicitud | metodo=POST | ruta=/predict | estado=422 | latencia_ms=3.966
+2026-06-16 21:38:06,545 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=1.262
+2026-06-16 21:38:07,626 | INFO | Solicitud | metodo=GET | ruta=/metrics | estado=200 | latencia_ms=0.915
+2026-06-16 21:40:59,395 | INFO | 4 changes detected
+2026-06-16 21:41:00,609 | INFO | 2 changes detected
+2026-06-16 21:41:00,964 | INFO | 3 changes detected
+2026-06-16 21:41:01,325 | INFO | 1 change detected
+2026-06-16 21:41:05,721 | INFO | 2 changes detected
+2026-06-16 21:41:49,992 | INFO | 1 change detected
+2026-06-16 21:41:51,210 | INFO | 3 changes detected
+2026-06-16 21:42:35,521 | INFO | 1 change detected
+2026-06-16 21:42:35,879 | INFO | 1 change detected
+2026-06-16 21:42:36,891 | INFO | 2 changes detected
+2026-06-16 21:42:58,362 | INFO | 1 change detected
+2026-06-16 21:42:59,369 | INFO | 3 changes detected
+2026-06-16 21:43:38,578 | INFO | 1 change detected
+2026-06-16 21:43:39,798 | INFO | 2 changes detected
+2026-06-16 22:02:44,591 | INFO | 1 change detected
+2026-06-16 22:02:44,949 | INFO | 1 change detected
+2026-06-16 22:02:45,965 | INFO | 3 changes detected
+2026-06-16 22:03:02,568 | INFO | 1 change detected
+2026-06-16 22:03:02,925 | INFO | 4 changes detected
+2026-06-16 22:03:03,285 | INFO | 7 changes detected
+2026-06-16 22:03:23,606 | INFO | 2 changes detected
+2026-06-16 22:03:37,228 | INFO | 3 changes detected
+2026-06-16 22:03:38,074 | INFO | 10 changes detected
+2026-06-16 22:03:38,736 | INFO | 3 changes detected
+2026-06-16 22:03:40,530 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 22:03:40,530 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
+2026-06-16 22:09:25,396 | INFO | 1 change detected
+2026-06-16 22:09:26,382 | INFO | 1 change detected
+2026-06-16 22:09:27,041 | INFO | 2 changes detected
+2026-06-16 22:09:30,984 | INFO | Modelo cargado correctamente: modelo_churn_v1
+2026-06-16 22:09:30,988 | INFO | Metadatos: {'version_modelo': 'modelo_churn_v1', 'archivo_modelo': 'modelo_churn_v1.joblib', 'variables_entrada': ['antiguedad', 'cargo_mensual', 'reclamos'], 'version_sklearn': '1.8.0', 'metricas': {'accuracy': 0.825, 'f1_score': 0.8659, 'auc_roc': 0.8749}}
+2026-06-16 22:17:59,864 | INFO | 3 changes detected
+2026-06-16 22:18:00,223 | INFO | 5 changes detected
